@@ -979,4 +979,5 @@
     <parent link="left_hand"/>
     <child link="left_hand_accelerometer"/>
   </joint>
+
 </robot>

@@ -29,13 +29,15 @@
       <xacro:arg name="right_electric_gripper" value="${right_electric_gripper}"/>
   </xacro:include>
 
-  <!-- Kinect Camera -->
+  <!-- Kinect Camera for GAZEBO -->
   <xacro:include filename="$(find baxter_description)/urdf/sensors/kinect_camera.urdf.xacro"/>
-  <xacro:kinect_camera name = "kinect_camera" parent = "head">
+  <xacro:kinect_camera_gazebo name = "kinect_camera_gazebo" parent = "head">
       <origin xyz="0 0 0.1" rpy="0 0 0" />
-  </xacro:kinect_camera>
+  </xacro:kinect_camera_gazebo>
 
 </robot>
+
+
 
 
 

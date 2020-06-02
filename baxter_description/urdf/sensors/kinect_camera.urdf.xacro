@@ -8,7 +8,7 @@
  <xacro:include filename="$(find baxter_description)/urdf/sensors/kinect_camera.gazebo.xacro" />
 
   <xacro:macro name="kinect_camera" params="name parent *origin">
-	
+
     <joint name="${name}_joint" type="fixed">
       <insert_block name="origin" />
       <parent link="${parent}"/>
@@ -29,6 +29,7 @@
         </geometry>
       </visual>
     </link>
+	<xacro:kinect_camera_gazebo name="${name}" />
   </xacro:macro>
 
 </root>
